@@ -1,9 +1,15 @@
 import React from 'react'
 import './HomePage.css'
+import Header from './../Header/Header'
+import Filters from './../Filters/Filters'
+import Restaurants from './../Restaurants/Reataurants'
+
 const HomePage = ()=>{
     return(
         <div className="HomePage">
-            {/* All the Components on the landing page shall appear here */}
+            <Header />
+            <Filters />
+            <Restaurants />
         </div>
     )
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './Restaurants.css'
+import RestaurantCard from './../RestaurantCard/RestaurantCard'
 
 export default class Reataurants extends Component {
     render() {
@@ -12,6 +13,8 @@ export default class Reataurants extends Component {
 
                 {/* has state sttoring all the restaurats matching the filter and changing according to the change in filters */}
                 
+                <RestaurantCard />
+
             </div>
         )
     }
