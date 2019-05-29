@@ -38,6 +38,9 @@ export default class Header extends Component {
                             </div>
                             <ul className="Header-links">
                                 <li>
+                                    <a href="" className="Header-link">Cart</a>
+                                </li>
+                                <li>
                                     <a href="" className="Header-link">Favourites</a>
                                 </li>
                                 <li>
@@ -54,6 +57,9 @@ export default class Header extends Component {
                     <ul className="Header-sidebar-links">
                         <li>
                             <button className='Header-sidebar-clbtn' onClick={this.closeSidebar}>&times;</button>
+                        </li>
+                        <li>
+                            <a href="" className="Header-link">Cart</a>
                         </li>
                         <li>
                             <a href="" className="Header-link">Favourites</a>

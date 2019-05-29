@@ -26,7 +26,7 @@
 
 .Header-sidebar {
     height: 100%;
-    width: 180px;
+    width: 50vw;
     position: fixed;
     z-index: 3;
     top: 0;
@@ -36,6 +36,14 @@
     overflow-x: hidden;
     transition: 1s;
     padding-top: 30px;
+}
+
+.Header-sidebar-opbtn {
+    display: inline;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    padding-top: 6px;
 }
 
 .Header-sidebar-clbtn {
@@ -53,7 +61,7 @@
 }
 
 .Header-location-bar {
-   width: 100%;
+   width: 60vw;
    height: 23px;
    border-radius: 5px;
    border: 2px solid rgb(161, 154, 154);
@@ -81,6 +89,10 @@
     padding: 2px;
 }
 
+.Header-location-button:hover {
+    cursor: pointer;
+}
+
 .Header-sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -93,12 +105,35 @@
 
 .Header-links {
     display: none;
+    width: 40vw;
+    margin: 10px;
+    padding: 0 30px;
+    position: absolute;
+    right:20px;
+    top: 0px;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.Header-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.Header-links a:hover {
+    cursor: pointer;
+    color: #333;
 }
 
 @media only screen and (min-width:768px){
     .Header-links {
-        display: flex;
-        
+        display: flex;    
+    }
+
+    .Header-location-bar {
+        width: 30vw;
     }
 
     .Header-sidebar-opbtn {
