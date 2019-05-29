@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 import './Header.css'
 import logo from '../../../logos/logo.png'
+import fav from '../../../logos/Fav-01.png'
+import offers from '../../../logos/offers-01.png'
+import cart from '../../../logos/shopping-cart.png'
+import user from '../../../logos/user.png'
 
 export default class Header extends Component {
 
@@ -37,16 +41,20 @@ export default class Header extends Component {
                                 <button onClick={this.openSidebar} className='Header-sidebar-opbtn'><i className="fas fa-bars"></i></button>
                             </div>
                             <ul className="Header-links">
-                                <li>
+                                <li className="Header-list-item">
+                                    <img className= 'Header-offers-icon' src={cart} alt='cart' />
                                     <a href="" className="Header-link">Cart</a>
                                 </li>
-                                <li>
+                                <li className="Header-list-item">
+                                    <img className= 'Header-fav-icon' src={fav} alt='fav' />
                                     <a href="" className="Header-link">Favourites</a>
                                 </li>
-                                <li>
+                                <li className="Header-list-item">
+                                    <img className= 'Header-offers-icon' src={offers} alt='fav' />
                                     <a href="" className="Header-link">Offers</a>
                                 </li>
-                                <li>
+                                <li className="Header-list-item">
+                                    <img className= 'Header-user-icon' src={user} alt='user' />
                                     <a href="" className="Header-link">My Account</a>
                                 </li>
                             </ul>
