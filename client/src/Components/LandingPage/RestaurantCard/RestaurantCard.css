@@ -1,6 +1,6 @@
 .RestaurantCard{
     border-radius: 5px;
-    box-shadow: 1px 1px 1px 2px rgba(202, 199, 199, 0.514);
+    box-shadow: 1px 1px 1px 1px rgba(202, 199, 199, 0.349);
     display: grid;
     grid-template-areas:
         " i i t t "
@@ -18,7 +18,7 @@
 
 .RestaurantCard-Image img{
     height: 35vw;
-    width: 45vw;
+    width: 35vw;
 }
 
 
@@ -53,4 +53,55 @@
 
 .fa-star{
     color:gold;
+}
+
+@media only screen and (min-width: 768px){
+    .RestaurantCard{
+
+        grid-template-areas:
+            " i i t t t t t"
+            " i i c c c c t"
+            " i i r r c c c"
+            " i i o o c c c"
+        ;
+    }
+
+    
+.RestaurantCard-Image{
+    grid-area: "i";
+    overflow: hidden;
+}
+
+.RestaurantCard-Image img{
+    height: 10vw;
+    width: 10vw;
+}
+
+.RestaurantCard-Title{
+    grid-area: "t";
+    padding: 2px 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.RestaurantCard-Cuisines{
+    padding: 2px 5px;
+    grid-area: "c";
+    color: rgba(54, 51, 51, 0.596);
+    font-size: 0.9em;
+}
+
+.RestaurantCard-Rating-Distance{
+    padding: 2px 20px;
+    grid-area: "r";
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.RestaurantCard-Offer{
+    padding: 2px 5px;
+    grid-area: "o";
+    font-size: 0.8em;
+}
 }

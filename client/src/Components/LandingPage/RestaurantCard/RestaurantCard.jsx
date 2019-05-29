@@ -4,6 +4,8 @@ import thumbnail from './../../../Assets/Images/cake.png'
 
 export default class RestaurantCard extends Component {
     render() {
+        
+        const Cuisines = this.props.rest.Cuisines.map((e)=>(" "+e))
         return (
             <div className="RestaurantCard">
                 <div className="RestaurantCard-Image">
@@ -11,17 +13,17 @@ export default class RestaurantCard extends Component {
                 </div>
 
                 <div className="RestaurantCard-details">
-                    <div className="RestaurantCard-Title">CAKE BLAST</div>
+                    <div className="RestaurantCard-Title">{this.props.rest.Name}</div>
                     <div className="RestaurantCard-Cuisines">
-                        Cakes, fast-food, unhealthy
+                       {Cuisines.join()}
                     </div>
                     <div className="RestaurantCard-Rating-Distance">
-                        <span><i className="fas fa-star"> </i>  4</span> 
-                        <span> <i className="fas fa-map-marker-alt"> </i>  0.7kms</span> 
+                        <span><i className="fas fa-star"> </i>{this.props.rest.Rating}</span> 
+                        <span> <i className="fas fa-map-marker-alt"> </i> {this.props.rest.Distance} kms</span> 
                     </div>
 
                     <div className="RestaurantCard-Offer">
-                        30% off on orders above 99
+                        {this.props.rest.Offer}
                     </div>
                 </div>
             </div>

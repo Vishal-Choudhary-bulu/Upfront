@@ -11,64 +11,63 @@ export default class Reataurants extends Component {
             restaurants : [
                 {
                     Name: "Cake Blast",
-                    Cusisines: ["Cakes", "Fast Food", "Beverages"],
-                    Rating: 4,
-                    Distance: 0.7,
+                    Cuisines: ["Cakes", "Fast Food", "Beverages"],
+                    Rating: 5,
+                    Distance: 4,
                     Offer: "30% on items above 99"
                 },
 
                 {
-                    Name: "Cake Blast",
-                    Cusisines: ["Cakes", "Fast Food", "Beverages"],
-                    Rating: 4,
-                    Distance: 0.7,
+                    Name: "Cup Blast",
+                    Cuisines: ["Cakes", "Fast Food", "Beverages"],
+                    Rating: 4.4,
+                    Distance: 3.7,
                     Offer: "30% on items above 99"
                 },
 
                 {
-                    Name: "Cake Blast",
-                    Cusisines: ["Cakes", "Fast Food", "Beverages"],
+                    Name: "Coke Blast",
+                    Cuisines: ["Cakes", "Fast Food", "Beverages"],
                     Rating: 4,
-                    Distance: 0.7,
+                    Distance: 2.7,
                     Offer: "30% on items above 99"
                 },
 
                 {
-                    Name: "Cake Blast",
-                    Cusisines: ["Cakes", "Fast Food", "Beverages"],
-                    Rating: 4,
-                    Distance: 0.7,
+                    Name: "Cake shop",
+                    Cuisines: ["Cakes", "Fast Food", "Beverages"],
+                    Rating: 1,
+                    Distance: 0.2,
                     Offer: "30% on items above 99"
                 },
 
                 {
-                    Name: "Cake Blast",
-                    Cusisines: ["Cakes", "Fast Food", "Beverages"],
-                    Rating: 4,
-                    Distance: 0.7,
+                    Name: "pizza Blast",
+                    Cuisines: ["Cakes", "Fast Food", "Beverages"],
+                    Rating: 3.2,
+                    Distance: 1.7,
                     Offer: "30% on items above 99"
                 },
 
                 {
-                    Name: "Cake Blast",
-                    Cusisines: ["Cakes", "Fast Food", "Beverages"],
-                    Rating: 4,
-                    Distance: 0.7,
+                    Name: "my restaurant",
+                    Cuisines: ["Cakes", "Fast Food", "Beverages"],
+                    Rating: 3,
+                    Distance: 1.2,
                     Offer: "30% on items above 99"
                 }
             ]
         }
     }
+
     render() {
+        const cards = this.state.restaurants.map((rest,key)=>(
+            <RestaurantCard rest = {rest}/>
+        ))
         return (
             <div className="Restaurants">
                 <div className="Restaurants-grid">
-                <RestaurantCard />
-                <RestaurantCard />
-                <RestaurantCard />
-                <RestaurantCard />
-                <RestaurantCard />
-                <RestaurantCard />
+                    {cards}
                 </div>
             </div>
         )
