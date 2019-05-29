@@ -108,14 +108,14 @@
 
 .Header-links {
     display: none;
-    width: 40vw;
+    width: 50vw;
     margin: 10px;
-    padding: 0 30px;
+    padding: 4px 10px 0 30px;
     position: absolute;
     right:20px;
     top: 0px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     list-style: none;
 }
 
@@ -129,6 +129,17 @@
     cursor: pointer;
     transform: scale(1.1);
     color: rgb(48, 44, 44);
+}
+
+.Header-list-item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Header-list-item img {
+    height: 20px;
+    width: 20px;
 }
 
 @media only screen and (min-width:768px){
