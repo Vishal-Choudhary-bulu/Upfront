@@ -2,15 +2,17 @@
 /* 10% for the search bar and 10 for the filters bar */
 
 .search-bar-wrapper {
+    width: 90%;
     display: flex;
-    justify-content: center;
+    justify-content: stretch;
 }
 .cuisine-search {
-    width: 60%;
+    width: 100% ;
     border-radius: 5px;
-    border: 1px solid rgb(221, 221, 221);
+    border: 1px solid rgb(39, 39, 39);
     padding: 5px 5px;
 }
+
 .cuisine-search:focus {
     outline: none !important;
 }
@@ -18,36 +20,49 @@
 .cuisine-tabs {
     list-style-type: none;
     display: inline;
-    margin: 0 1rem;
+    margin-right: 1rem;
 }
 .cuisine-tabs:hover {
     cursor: pointer;
 }
+
 .tabs {
     overflow-x: auto;
     white-space: nowrap;
     padding: 0;
 }
+
 .tabs ul {
     padding-left: 1vw;
 }
+
 .active-tab {
     font-weight: bold;
 }
-.Filters  h3 {
-    padding-left: 0.7vw;
-    margin-bottom: 0;
-    margin-top: 20px;   
 
-    font-weight: bold;
-}
 
 .icon-search {
     padding-top:5px;
     margin-left: -25px;
-    color: rgb(206, 206, 206)
+    color: rgb(0, 0, 0);
+    
 }
+
 .icon-search:hover {
     color: rgb(134, 134, 134);
     cursor: pointer;
+}
+
+.Filters{
+    width: 100%;
+    padding-left: 5vw;
+}
+
+.Filters-Cuisines{
+    padding-top: 10px;
+}
+
+.Filters-Cuisines span{
+    font-weight: bolder;
+    font-size: 1.3em;
 }

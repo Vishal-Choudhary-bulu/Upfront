@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './RestaurantCard.css'
-import thumbnail from './../../../logos/logo.png'
+import thumbnail from './../../../Assets/Images/cake.png'
 
 export default class RestaurantCard extends Component {
     render() {
@@ -16,8 +16,8 @@ export default class RestaurantCard extends Component {
                         Cakes, fast-food, unhealthy
                     </div>
                     <div className="RestaurantCard-Rating-Distance">
-                        <span><i className="fas fa-star"></i> 4</span> 
-                        <span> <i className="fas fa-map-marker-alt"></i> 0.7</span> 
+                        <span><i className="fas fa-star"> </i>  4</span> 
+                        <span> <i className="fas fa-map-marker-alt"> </i>  0.7kms</span> 
                     </div>
 
                     <div className="RestaurantCard-Offer">

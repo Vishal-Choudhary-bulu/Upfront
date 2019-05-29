@@ -29,19 +29,14 @@ export default class Filters extends Component {
                 <input type = "text" value = {this.props.searchValue} onChange = {this.props.handleSearch}  className = "cuisine-search" placeholder='Search'/>
                 <i className="fas fa-search icon-search"></i>
                 </div>
-                <h3>Cuisines</h3>
-                <div className = "tabs">
-                <ul>
-                    {jsx}
-                </ul>
+                <div className="Filters-Cuisines">
+                    <span>Cuisines</span>
                 </div>
-                
-                {/* Note: All the child elements should have a className of the format "Filter-yourDecidedName" */}
-
-                {/* this will have a search bar for filtering the restaurants of users choice */}
-
-                {/* this will basically be a navbar of filters like cuisines etc. */}
-                
+                <div className = "tabs">
+                    <ul>
+                        {jsx}
+                    </ul>
+                    </div>
             </div>
         )
     }

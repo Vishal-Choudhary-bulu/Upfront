@@ -59,16 +59,16 @@ export default class Header extends Component {
                             <button className='Header-sidebar-clbtn' onClick={this.closeSidebar}>&times;</button>
                         </li>
                         <li>
-                            <a href="" className="Header-link">Cart</a>
+                            <a href="#" className="Header-link">Cart</a>
                         </li>
                         <li>
-                            <a href="" className="Header-link">Favourites</a>
+                            <a href="#" className="Header-link">Favourites</a>
                         </li>
                         <li>
-                            <a href="" className="Header-link">Offers</a>
+                            <a href="#" className="Header-link">Offers</a>
                         </li>
                         <li>
-                            <a href="" className="Header-link">My Account</a>
+                            <a href="#" className="Header-link">My Account</a>
                         </li>
                     </ul>
                 </div>
