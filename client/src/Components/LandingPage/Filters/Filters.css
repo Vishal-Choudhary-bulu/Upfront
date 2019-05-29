@@ -7,9 +7,9 @@
 }
 .cuisine-search {
     width: 60%;
-    border-radius: 3px;
+    border-radius: 5px;
     border: 1px solid rgb(221, 221, 221);
-    padding: 10px 5px;
+    padding: 5px 5px;
 }
 .cuisine-search:focus {
     outline: none !important;
@@ -26,21 +26,25 @@
 .tabs {
     overflow-x: auto;
     white-space: nowrap;
+    padding: 0;
+}
+.tabs ul {
+    padding-left: 1vw;
 }
 .active-tab {
     font-weight: bold;
 }
-.Filters p {
-    padding-left: 4.6%;
+.Filters  h3 {
+    padding-left: 0.7vw;
     margin-bottom: 0;
-    margin-top: 30px;   
+    margin-top: 20px;   
 
     font-weight: bold;
 }
 
 .icon-search {
-    padding-top:10px;
-    margin-left: -30px;
+    padding-top:5px;
+    margin-left: -25px;
     color: rgb(206, 206, 206)
 }
 .icon-search:hover {

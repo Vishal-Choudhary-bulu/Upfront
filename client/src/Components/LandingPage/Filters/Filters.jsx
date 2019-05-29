@@ -26,10 +26,10 @@ export default class Filters extends Component {
         return (
             <div className="Filters">
                 <div className="search-bar-wrapper">
-                <input type = "text" value = {this.props.searchValue} onChange = {this.props.handleSearch}  className = "cuisine-search"/>
+                <input type = "text" value = {this.props.searchValue} onChange = {this.props.handleSearch}  className = "cuisine-search" placeholder='Search'/>
                 <i className="fas fa-search icon-search"></i>
                 </div>
-                <p>Cuisines</p>
+                <h3>Cuisines</h3>
                 <div className = "tabs">
                 <ul>
                     {jsx}
