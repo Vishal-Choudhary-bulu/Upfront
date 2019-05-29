@@ -26,7 +26,7 @@ export default class Filters extends Component {
         return (
             <div className="Filters">
                 <div className="search-bar-wrapper">
-                <input type = "text" value = {this.props.searchValue} onChange = {this.props.handleSearch}  className = "cuisine-search" placeholder='Search'/>
+                <input type = "text" value = {this.props.searchValue} onChange = {this.props.handleSearch}  className = "cuisine-search" placeholder='Biryani,KFC,MilkShakes...'/>
                 <i className="fas fa-search icon-search"></i>
                 </div>
                 <div className="Filters-Cuisines">

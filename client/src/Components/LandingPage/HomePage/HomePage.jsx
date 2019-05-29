@@ -6,7 +6,7 @@ import HomeWrapper from '../HomeWrapper/HomeWrapper';
 const HomePage = ()=>{
     return(
         <div className="HomePage">
-            <Header />
+            <Header /><br/>
             <HomeWrapper />
         </div>
     )

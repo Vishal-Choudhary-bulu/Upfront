@@ -4,12 +4,12 @@
 .search-bar-wrapper {
     width: 90%;
     display: flex;
-    justify-content: stretch;
+    justify-content: center;
 }
 .cuisine-search {
     width: 100% ;
     border-radius: 5px;
-    border: 1px solid rgb(39, 39, 39);
+    border: 1px solid rgb(143, 143, 143);
     padding: 5px 5px;
 }
 
@@ -65,4 +65,17 @@
 .Filters-Cuisines span{
     font-weight: bolder;
     font-size: 1.3em;
+}
+
+@media only screen and (min-width:768px){
+
+    .cuisine-search{
+        width: 50%;
+        padding: 10px;
+    }
+    .icon-search{
+        padding: 10px;
+        margin-left: -40px;
+    }
+
 }
