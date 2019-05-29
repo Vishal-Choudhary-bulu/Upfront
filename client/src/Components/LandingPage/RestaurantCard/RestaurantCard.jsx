@@ -1,20 +1,29 @@
 import React, { Component } from 'react'
 import './RestaurantCard.css'
+import thumbnail from './../../../logos/logo.png'
 
 export default class RestaurantCard extends Component {
     render() {
         return (
             <div className="RestaurantCard">
-                {/* Note: All the child elements should have a className of the format "RestaurantCard-yourDecidedName" */}
+                <div className="RestaurantCard-Image">
+                    <img src={thumbnail}  alt="sample image"/>
+                </div>
 
-                {/* A Restaurant Card with a thumbnail */}
+                <div className="RestaurantCard-details">
+                    <div className="RestaurantCard-Title">CAKE BLAST</div>
+                    <div className="RestaurantCard-Cuisines">
+                        Cakes, fast-food, unhealthy
+                    </div>
+                    <div className="RestaurantCard-Rating-Distance">
+                        <span><i className="fas fa-star"></i> 4</span> 
+                        <span> <i className="fas fa-map-marker-alt"></i> 0.7</span> 
+                    </div>
 
-                {/* Appers inside the Restaurants Component */}
-
-                {/* will have state with all the data about the restaurant to be shown in the thumbnail */}
-
-                {/* also has various filter properties */}
-                
+                    <div className="RestaurantCard-Offer">
+                        30% off on orders above 99
+                    </div>
+                </div>
             </div>
         )
     }

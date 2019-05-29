@@ -22,7 +22,7 @@ class HomeWrapper extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="HomeWrapper">
                 <Filters handleSearch = {this.handleChange} setTab = {this.setTab} searchValue = {this.state.search} activeTab = {this.state.activeTab}/>
                 <Restaurants filters = {this.state} />
             </div>

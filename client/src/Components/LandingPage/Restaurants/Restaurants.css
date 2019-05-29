@@ -1,1 +1,15 @@
-/* spans to rest of the screen and has length 100vh(tentative) with relative positioning */
+.Restaurants{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.Restaurants-grid{
+    width: 90%;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 100px;
+    grid-gap: 10px;
+}

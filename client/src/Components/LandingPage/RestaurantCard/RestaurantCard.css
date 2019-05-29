@@ -1,1 +1,48 @@
-/* each card of 25% width and use grid and center align */
+.RestaurantCard{
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 2px rgba(202, 199, 199, 0.514);
+    display: grid;
+    grid-template-areas:
+        " i i t t "
+        " i i c c "
+        " i i r r "
+        " i i o o "
+    ;
+    grid-gap: 5px;
+}
+
+.RestaurantCard-Image{
+    grid-area: "i";
+    overflow: hidden;
+}
+
+.RestaurantCard-Image img{
+    width: 40vw;
+    height: 40vh;
+}
+
+
+
+.RestaurantCard-Title{
+    grid-area: "t";
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.RestaurantCard-Cuisines{
+    grid-area: "c";
+    color: rgba(54, 51, 51, 0.596);
+    font-size: 0.9em;
+}
+
+.RestaurantCard-Rating-Distance{
+    grid-area: "r";
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.RestaurantCard-Offer{
+    grid-area: "o";
+    font-size: 0.8em;
+}
